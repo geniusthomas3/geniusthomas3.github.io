@@ -19,13 +19,13 @@ locale                   : "en-US"
 title                    : "걍 하는 블로그"
 title_separator          : "-"
 subtitle                 : "잘 못하니까 기대하지 마"
-name                     : "Thomas"
+name                     : "이과가고픈 벼어엉신"
 description              : "정올 준비하면서 걍 한번 올려봄"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : 
+logo                     :
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -293,3 +293,14 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
